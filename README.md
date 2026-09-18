@@ -11,10 +11,17 @@ typically within a few minutes due to GitHub's CDN cache.
 Format:
 ```json
 {
-  "tyt": "2026-06-21 10:14:59",
-  "ayt": "2026-06-22 10:14:59",
-  "ydt": "2026-06-22 15:44:59",
-  "msu": "2026-02-23 10:14:59",
-  "lgs": "2026-06-15 09:29:59"
+  "tyt": "2027-06-19 10:15:00",
+  "ayt": "2027-06-20 10:15:00",
+  "ydt": "2027-06-20 10:15:00",
+  "announced": 0
 }
 ```
+
+`announced`: `1` if these are the official ÖSYM dates, `0` if they're
+still provisional - `0` shows a "not yet officially announced" banner
+at the top of the exam page instead of presenting the dates as final.
+
+Each date must be exactly `yyyy-MM-dd HH:mm:ss` and a real calendar
+date/time - anything else (wrong format, out-of-range month/day, missing
+key) makes the app show "!" for that exam instead of a wrong date.
